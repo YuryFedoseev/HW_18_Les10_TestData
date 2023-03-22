@@ -3,7 +3,7 @@
 https://qa.guru/pl/teach/control/lesson/view?id=264017955&editMode=0
 
 
-###Задание:
+### Задание:
 1.
 
 – Запаковать в zip архив несколько разных файлов - pdf, xlsx, csv
