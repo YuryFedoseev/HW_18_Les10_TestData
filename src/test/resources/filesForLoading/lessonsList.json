@@ -1,0 +1,44 @@
+{
+	"sendID": "cf742ba832982ac3499с2312cfa97c62",
+	"eventType": "lessonsList",
+	"timestamp": "1679637600",
+	"studentId": 2,
+	"diplomaStatus": false,
+	"lessonList": [
+		{
+			"numberLesson": 8,
+			"teacher": "Станислав Васенков",
+			"lessonName": "8. Продолжаем разрабатывать автотесты. Генерация тестовых данных. Станислав Васенков.",
+			"lectureShown": true,
+			"homeworkSubmittedState": true
+		},
+		{
+			"numberLesson": 9,
+			"teacher": "Дмитрий Тучс",
+			"lessonName": "9. JUnit 5. Дмитрий Тучс",
+			"lectureShown": true,
+			"homeworkSubmittedState": true
+		},
+		{
+			"numberLesson": 10,
+			"teacher": "Дмитрий Тучс",
+			"lessonName": "10. Работаем с файлами. Дмитрий Тучс",
+			"lectureShown": true,
+			"homeworkSubmittedState": false
+		},
+		{
+			"numberLesson": 11,
+			"teacher": "Артём Ерошенко",
+			"lessonName": "11. Allure Reports. Артём Ерошенко. Занятие в записи",
+			"lectureShown": true,
+			"homeworkSubmittedState": false
+		},
+		{
+			"numberLesson": 12,
+			"teacher": "Станислав Васенков",
+			"lessonName": "12. Jenkins. Создаем первую задачу. Станислав Васенков.",
+			"lectureShown": false,
+			"homeworkSubmittedState": false
+		}
+	]
+}
