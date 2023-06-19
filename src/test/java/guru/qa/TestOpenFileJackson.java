@@ -11,8 +11,6 @@ import java.io.InputStreamReader;
 
 public class TestOpenFileJackson {
 
-    @JsonIgnoreProperties(ignoreUnknown = true)
-
     ClassLoader cl = TestOpenFileJackson.class.getClassLoader();
 
     @Test
