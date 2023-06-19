@@ -2,6 +2,8 @@ package guru.qa;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
+
 public class JsonText {
     private String teacher;
     private String sendID;

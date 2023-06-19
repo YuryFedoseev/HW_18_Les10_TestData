@@ -2,6 +2,7 @@ package guru.qa;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -15,15 +16,20 @@ public class TestOpenFileJackson {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
 
+    ClassLoader cl = TestOpenFileJackson.class.getClassLoader();
     @Test
     public void jsonOpen() throws IOException {
-        ClassLoader classLoader = this.getClass().getClassLoader();
-        InputStream resourceAsStream = classLoader.getResourceAsStream("filesForLoading/lessonsList.json");
-        File file = new File("src/test/resources/filesForLoading/lessonsList.json");
-        InputStreamReader inputStreamReader = new InputStreamReader(resourceAsStream);
-        JsonText jsonText = objectMapper.readValue(file, JsonText.class);
-        System.out.println(jsonText);
+        ObjectMapper objectMapper = new ObjectMapper();
+        try (InputStream is = cl.getResourceAsStream("filesForLoading/lessonsList.json");
+             InputStreamReader isr = new InputStreamReader(is)) {
+            JsonText text = objectMapper.readValue(isr, JsonText.class);
+
+            Assertions.assertEquals(2, text.getStudentId());
+        }
 
     }
-
 }
+
+
+
+
